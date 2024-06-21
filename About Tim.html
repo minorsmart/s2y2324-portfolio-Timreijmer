@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #666;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+        nav ul li a:hover {
+      color: #ffd700;
+    }
+
+        .popup-box {
+            display: none;
+            position: absolute;
+            background-color: #666;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        nav ul li:hover .popup-box {
+            display: block;
+        }
+
+        main {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .section {
+            flex: 1;
+            max-width: 600px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .copy-text {
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 100px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Personal Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="#">Group Members</a>
+      <div class="dropdown-content">
+        <a href="Tims Classes.html">Tim</a>
+        <a href="Mijnsite.html">Jim</a>
+        <a href="PortfolioStijnPostmus.html">Stijn</a>
+            <li><a href="Tims Classes.html">Personal Blog</a></li>
+            <li><a href="Bestanden Wopereis.html">Wopereis</a></li>
+            <li>
+                <a href="#">Contact</a>
+                <div class="popup-box">
+                    <p>Email: <span class="copy-text" onclick="copyText('t.reijmer@student.han.nl')">t.reijmer@student.han.nl</span></p>
+                    <p>Phone: <span class="copy-text" onclick="copyText('06-30842589')">06-30842589</span></p>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="section">
+            <h2>Spotify en Openweather API's</h2>
+            <p> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7nqfbCF1nYcQ28PFvfBvVO?utm_source=generator" 
+                width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></p>
+            <p>
+               <iframe width="600" height="300" src="Weather api Tim.html";></iframe> 
+            </p>
+                
+        </div>
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Welkom op mijn persoonlijke webpagina. Mijn naam is Tim Reijmer, ik ben 22 jaar oud en woon in Didam. Ik studeer HBO Automotive aan de HAN in Arnhem.</p>
+                <p>Ik heb voor de Minor Smart Industry gekozen omdat ik tijdens mijn specialisatie al onderzoek heb gedaan naar Industry 4.0, en hier zeer gëintereseerd in was.
+                    Daarnaast wil ik meer kennis opdoen over het bedrijfskundige aspect van de industrie. </p>
+                <img src="images/Profielfoto Tim.jpg" alt="Profile Picture">
+        </div>
+        <div class="section">
+            <h2>My Hobbies</h2>
+            <p>Als hobby ben ik ook graag met auto's bezig. Zo heb ik een Fiat 500L uit het jaar 1969 waar ik graag mee op pad ga en aan sleutel.</p>
+            <p>Ik ben sinds vorig jaar in eigendom van deze Fiat 500L en hoop er deze aankomende zomer veel mee op pad te kunnen gaan en er aan te doen. Zo staan er al een aantal grote reparaties op de planning.</p>
+             <a href="images/Afbeelding Fiat 500L.jpg">
+                <img src="images/Afbeelding Fiat 500L.jpg" width="200">
+             </a>
+        <!-- Add more sections as needed -->
+    </main>
+    <footer>
+        <p>&copy; 2024 Minor Smart Industry</p>
+    </footer>
+
+    <script>
+        function copyText(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            alert('Copied to clipboard: ' + text);
+        }
+    </script>
+</body>
+</html>

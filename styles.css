@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+background-color: #333;
+color: #fff;
+padding: 10px;
+}
+
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+
+nav ul li {
+margin-right: 20px;
+}
+
+nav ul li:last-child {
+margin-right: 0;
+}
+
+nav ul li a {
+color: #fff;
+text-decoration: none;
+}
+
+nav ul li a:hover {
+color: #ffd700;
+}
+
+main {
+    margin: 30px;
+}
+
+.post {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    font-size: medium;
+}
+
+.post h2 {
+    color: #333;
+    margin-left: 3cqb;
+}
+.post h3 {
+    margin-left: 15px;
+}
+.post h4 {
+    margin-left: 20px;
+}
+.post p {
+    color: #666;
+    margin-left: 35px;
+    margin-right: 35px;
+    text-align: justify;
+    max-width: 80%;
+}
+.post img {
+    float:right;
+    margin-left: 20px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.halvePost {
+    width: 45%;
+    text-align: left;
+    float: right;
+    background-color:lightblue;/*"#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0");*/
+    margin-left: 50px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: small;
+}
+.halvePost p
+{
+    margin-left:10px;
+    max-width: 100%;
+}
+.halvePost img {
+    margin: 20px;
+    margin-top: 0px
+}
+.picturePost {
+    width: 620px;
+    float: right;
+    margin-left: 50px;
+}
+.picturePost img {
+    float:right;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.totop {
+    background-color: rgb(237, 67, 67);
+    width: 50px;
+    padding: 10px;
+    position: fixed;
+    cursor: pointer;
+    bottom: 85px;
+    left: 0px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: white;
+    
+}
+.totop a {
+    color: white;
+    text-decoration-line: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.totop :hover
+{
+    color: lightgray;
+}
+
+/*Slides */
+/* Slideshow container */
+.slideshow-container {
+
+    height: 305px;
+    float: right;
+}
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 0px;
+    width: 0px;
+    margin: 0;
+  }
+  .dotsDiv {
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
