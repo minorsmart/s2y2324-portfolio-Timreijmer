@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #666;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+        nav ul li a:hover {
+      color: #ffd700;
+    }
+
+        .popup-box {
+            display: none;
+            position: absolute;
+            background-color: #666;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        nav ul li:hover .popup-box {
+            display: block;
+        }
+
+        main {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .section {
+            flex: 1;
+            max-width: 400px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .copy-text {
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Personal Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Dropdown.html">Home</a></li>
+            <li><a href="Mijnsite.html">Personal Blog</a></li>
+            <li><a href="Bestanden Wopereis.html">Wopereis</a></li>
+            <li>
+                <a href="#">Contact</a>
+                <div class="popup-box">
+                    <p>Email: <span class="copy-text" onclick="copyText('j.sommers@student.han.nl')">j.sommers@student.han.nl</span></p>
+                    <p>Phone: <span class="copy-text" onclick="copyText('112')">112</span></p>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Mijn naam is Jim Sommers, Technische Bedrijfskunde student aan de HAN Arnhem. Ik ben 24 jaar oud en zit in mijn laatste jaar van de opleiding. Verder woon ik nog thuis bij mijn ouders in Tolkamer. In mijn vrije tijd ben ik vaak in de sportschool te vinden of ergens waar alcohol aanwezig is. Verder spendeer ik graag tijd door met vrienden en kijk ik graag naar verschillende sporten zoals voetbal of formule 1.</p>
+                <p>Afgelopen half jaar heb ik de minor Smart Industry gevolgd, omdat dit aansluit op mijn opleiding. Naast dat het aansluit op de opleiding is het ook een verbreding van nieuwe technieken in de praktijk. Voor mij wekte dit dus ook de interesse op om te leren welke nieuwe ontwikkelingen en innovaties er op de markt zijn en hoe deze gebruikt worden. Het was dus ook zeer interessant om doormiddel van de verschillende workshops mijn kennis te verbreden.</p>
+                <img src="images/IMG-20240613-WA0040.jpg" alt="Profile Picture">
+        </div>
+        <div class="section">
+            <h2>API's</h2>
+            <p>Hieronder twee zelf gemaakte API's</p>
+            <iframe src="quote.html" width="400" height="200" frameborder="0"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3et2VUOuCFLabPg17g95cO?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+             </a>
+        <!-- Add more sections as needed -->
+    </main>
+    <footer>
+        <p>&copy; 2024 Minor Smart Industry</p>
+    </footer>
+
+    <script>
+        function copyText(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            alert('Copied to clipboard: ' + text);
+        }
+    </script>
+</body>
+</html>
